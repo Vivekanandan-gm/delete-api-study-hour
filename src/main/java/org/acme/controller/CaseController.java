@@ -33,6 +33,6 @@ public class CaseController {
     @Path("/test")
     public Response test() {
         System.out.println("called");
-        return Response.status(Response.Status.BAD_REQUEST).build();
+        return Response.status(Response.Status.BAD_REQUEST).entity("test").build();
     }
 }
